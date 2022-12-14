@@ -1,7 +1,7 @@
 import reactLogo from './assets/react.svg'
 import Button from '@mui/material/Button';
 
-function Inside() {
+function Outside() {
   return (
     <div>
       <Button variant="text">Text</Button>
@@ -11,4 +11,4 @@ function Inside() {
   )
 }
 
-export default Inside
+export default Outside
