@@ -1,23 +1,16 @@
-import React from 'react'
-import { useRoutes } from "react-router-dom";
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Inside from '../components/Inside';
+import Inside from '@/components/Inside.tsx';
 import Outside from '../components/Outside';
+//import App from '../App';
 
-const Routes = () => {
+const App = () => {
     return (         
-        <Routes>
-          <Route path='/aa' element={<Inside/>} />
-          <Route path='/topics' element={<Outside/>} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<App/>} />
+        <Route path='/aa' element={<Inside/>} />
+        <Route path='/topics' element={<Outside/>} />
+      </Routes>
     );
-    }
-export default Routes;
-
-// function App() {
-//   let element = useRoutes([
-//     { path: "/a", element: <Inside /> },
-//   ]);
-
-//   return element;
-// }
+}
+export default App;
