@@ -1,29 +1,50 @@
-import { Grid } from '@mui/material';
 import React from 'react';
+
+import Grid2 from '@mui/material/Unstable_Grid2'; 
 import Card from './Card';
 import PostBlock from './Post';
 
 const HomePage = () => {
     return(
-        <div>
-            <p>Home</p>
-            <Grid 
-                container spacing={1}
-                direction="row"
-                justifyContent="center"
+        <Grid2 
+            container 
+            direction="row"
+            justifyContent="center"
+            alignItems="flex-start"
+        >
+            <Grid2 xs={1} lg={1}></Grid2>
+            <Grid2 
+                container 
+                xs={10} lg={8} 
+                direction="column" 
+                justifyContent="flex-start" 
                 alignItems="center"
+                rowSpacing={3}
             >
-                <Grid xs={8}>
+                <Grid2 xs={10} lg={10}>
                     <PostBlock></PostBlock>
-                </Grid>
-                <Grid xs={4}>
-                    <Card></Card>
-                </Grid>
-                <Grid xs={8}>
+                </Grid2>
+                <Grid2 xs={10} lg={10}>
                     <PostBlock></PostBlock>
-                </Grid>
-            </Grid>
-        </div>
+                </Grid2>
+                <Grid2 xs={10} lg={10}>
+                    <PostBlock></PostBlock>
+                </Grid2>
+                <Grid2 xs={10} lg={10}>
+                    <PostBlock></PostBlock>
+                </Grid2>
+            </Grid2>
+            <Grid2 
+                container
+                xs={10} lg={2} 
+                direction="column"
+                justifyContent="flex-start"
+                alignItems="flex-start"
+            >
+                <Card></Card>
+            </Grid2>
+            <Grid2 xs={1} lg={1}></Grid2>
+        </Grid2>
     )
 }
 
