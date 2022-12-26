@@ -3,9 +3,12 @@ import React from 'react';
 import Grid2 from '@mui/material/Unstable_Grid2'; 
 import Card from './Card';
 import PostBlock from './Post';
+import Header from './Header'
 
 const HomePage = () => {
     return(
+        <>
+        <Header></Header>
         <Grid2 
             container 
             direction="row"
@@ -45,6 +48,7 @@ const HomePage = () => {
             </Grid2>
             <Grid2 xs={1} lg={1}></Grid2>
         </Grid2>
+    </>
     )
 }
 
