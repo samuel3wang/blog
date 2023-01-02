@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
-import Inside from '../components/Inside';
 import HomePage from '../components/Home';
 import AboutPage from '../components/About';
 
@@ -10,8 +9,7 @@ const Application = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage/>} />
-          <Route path='/qq' element={<AboutPage/>} />
-          <Route path='/aa' element={<Inside/>} />
+          <Route path='/about' element={<AboutPage/>} />
         </Routes>
       </BrowserRouter>
     );

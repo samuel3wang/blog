@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, Grid, Typography } from '@material-ui/core';
+import { Card, CardHeader, CardContent, Typography } from '@material-ui/core';
 // database
 function PostBlock() {
     return (

@@ -1,7 +1,5 @@
-import React from 'react';
-
 import Grid2 from '@mui/material/Unstable_Grid2'; 
-import Card from './Card';
+import Link from './Link';
 import PostBlock from './Post';
 import Header from './Header'
 
@@ -9,6 +7,7 @@ const HomePage = () => {
     return(
         <>
         <Header></Header>
+        <Link></Link>
         <Grid2 
             container 
             direction="row"
@@ -44,7 +43,7 @@ const HomePage = () => {
                 justifyContent="flex-start"
                 alignItems="flex-start"
             >
-                <Card></Card>
+                {/* categories */}
             </Grid2>
             <Grid2 xs={1} lg={1}></Grid2>
         </Grid2>
