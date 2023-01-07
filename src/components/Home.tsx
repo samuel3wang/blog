@@ -6,8 +6,8 @@ import Header from './Header'
 const HomePage = () => {
     return(
         <>
-        <Header></Header>
-        <Link></Link>
+        <Header/>
+        <Link/>
         <Grid2 
             container 
             direction="row"
@@ -47,7 +47,7 @@ const HomePage = () => {
             </Grid2>
             <Grid2 xs={1} lg={1}></Grid2>
         </Grid2>
-    </>
+        </>
     )
 }
 
