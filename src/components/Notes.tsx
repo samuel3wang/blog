@@ -1,9 +1,9 @@
-import Grid2 from '@mui/material/Unstable_Grid2';
+import React from 'react';
+import Header from './Header'
 import Link from './Link'
 import Grid from './Grid'
-import Header from './Header'
 
-const HomePage = () => {
+const Notes = () =>{
     return(
         <>
             <Header/>
@@ -13,4 +13,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default Notes

@@ -1,3 +1,5 @@
+import react from 'react';
+
 export default function Header() {
   return (
     <div className="h-48 flex items-center justify-center bg-sky-100">
