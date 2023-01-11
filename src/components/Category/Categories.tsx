@@ -1,21 +1,28 @@
 import react from 'react';
+import { Link } from 'react-router-dom'
 import Header from '../Header'
-import Grid from '../Grid'
-import Category from './Category';
-import { Card, CardHeader, CardContent, Typography } from '@mui/material';
+import Outer from '../Outer'
+
+const title = [
+    {title: 'Frontend1111111'},
+    {title: 'Frontend22222'},
+    {title: '在routes禁用URL'},
+    {title: 'Frontend54545'},
+]
 
 export default function Categories(){
     return (
         <>
-            <Card className='mb-10'>
-            <CardHeader title= 'Post Title' subheader= 'time category' className='bg-sky-100'/>
-            <CardContent>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptas qui eum iste distinctio hic?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum beatae, magnam ad officiis sed dolore obcaecati esse maiores optio.
-                </Typography>
-            </CardContent>
-            </Card>
+            <div>
+                <p className="text-3xl font-semibold h-12">{'asdasd'}</p>
+                {title.map((item, _) => (
+                    <li key={item.title} className="text-2xl">
+                        <Link className="text-neutral-700" to={`/${item.title}`} >
+                            {item.title}
+                        </Link>
+                    </li>
+                ))}
+            </div>
         </>
     )
 }

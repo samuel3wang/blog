@@ -1,15 +1,15 @@
 import Grid2 from '@mui/material/Unstable_Grid2';
-import Link from './Link'
+import Outer from './Outer'
 import Grid from './Grid'
 import Header from './Header'
 
 const HomePage = () => {
     return(
-        <>
+        <div>
             <Header/>
-            <Link/>
+            <Outer/>
             <Grid/>
-        </>
+        </div>
     )
 }
 

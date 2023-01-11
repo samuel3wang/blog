@@ -3,22 +3,22 @@ import NotesIcon from '@mui/icons-material/Notes';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-export default function Link() {
+export default function Outer() {
   return (
-    <div className="h-20 flex items-center justify-center">
+    <div className="h-20 flex items-center justify-center bg-blue-500 w-screen">
       <a href='https://www.linkedin.com/in/samuel3wang/'>
         <IconButton>
-          <LinkedInIcon fontSize="large"/>
+          <LinkedInIcon fontSize="large" htmlColor='white'/>
         </IconButton>
       </a>
       <a href='https://github.com/samuel3wang/'>
         <IconButton >
-          <GitHubIcon fontSize="large"/>
+          <GitHubIcon fontSize="large" htmlColor='white' className='mx-3'/>
         </IconButton>
       </a>
       <a href='https://medium.com/@samuel3wang/'>
-        <IconButton>
-          <NotesIcon fontSize="large"/>
+        <IconButton >
+          <NotesIcon fontSize="large" htmlColor='white'/>
         </IconButton>
       </a>
     </div>
